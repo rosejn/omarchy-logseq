@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "rosejn.logseq",
+  "name": "Logseq",
+  "version": "0.1.0",
+  "author": "rosejn",
+  "description": "Show, hide, and pop out the existing Logseq desktop window.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "LogseqWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Logseq",
+    "category": "Apps",
+    "defaultSection": "center",
+    "allowMultiple": false,
+    "defaults": {
+      "width": 1100,
+      "height": 780
+    },
+    "schema": [
+      {
+        "key": "width",
+        "type": "int",
+        "label": "Window width",
+        "min": 480,
+        "max": 2400
+      },
+      {
+        "key": "height",
+        "type": "int",
+        "label": "Window height",
+        "min": 320,
+        "max": 1600
+      }
+    ]
+  },
+  "license": "MIT"
+}
